@@ -5,6 +5,7 @@ import logging
 def setup_logger(name):
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.CRITICAL + 1)
 
     # Ignore TensorFlow and JAX warnings
     logging.getLogger("tensorflow").setLevel(logging.ERROR)
