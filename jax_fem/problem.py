@@ -31,7 +31,6 @@ class Problem:
             self.ele_type = [self.ele_type]
             self.gauss_order = [self.gauss_order]
             self.dirichlet_bc_info = [self.dirichlet_bc_info]
-
         self.num_vars = len(self.mesh)
 
         self.fes = [FiniteElement(mesh=self.mesh[i], 

@@ -434,7 +434,7 @@ def solver(problem, solver_options={}):
     logger.debug(f"max of dofs = {np.max(dofs)}")
     logger.debug(f"min of dofs = {np.min(dofs)}")
 
-    return sol_list
+    return sol_list, dofs
 
 
 ################################################################################
